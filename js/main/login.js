@@ -6,11 +6,9 @@ const login = async (e) => {
   e.preventDefault();
   const data = formData(e);
   console.log(data);
-  // if (data.password == ) {
-    
-  // }
   try {
     const [user] = await getUsersByEmail(data.email);
+    console.log(user)
     if (user) {
       localStorage.setItem("user", "true")
       // window.location.href='./index.html'

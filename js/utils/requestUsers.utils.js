@@ -51,15 +51,15 @@ const editUser = async (id) => {
   }
 };
 
-const createUser = async () => {
+export const createUser = async (data) => {
   try {
-    const { emailCreate, passwordCreate, avatarCreate } = formData;
-    const createRequest = await fetch(`${url}/usuarios`, {
+    const { email, password, userName } = data;
+    const createRequest = await fetch(`${URL}/usuarios`, {
       method: 'POST',
       body: JSON.stringify({
-        email: emailCreate,
-        password: passwordCreate,
-        avatar: avatarCreate,
+        email: email,
+        password: password,
+        userName: userName,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
