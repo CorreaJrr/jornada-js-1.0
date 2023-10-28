@@ -1,17 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RollingConf</title>
-  </head>
-  <body>
-    <div id="app">
-      <button id="btn-user">Ver usuarios</button>
-      <button id="btn-talks">Ver charlas</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>RollingConf</title>
+</head>
+
+<body>
+  <header class="">
+    <nav class="navbar navbar-expand-lg pt-5">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Register </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Login </a>
+            </li>
+            <li class="nav-item dropdown">
+            </li>
+    
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    <div class="waterEffect">
+      <div class="decoration"> </div>
+      <div class="decoration2"> </div>
+      <div class="decoration3"> </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="mt-5 d-flex p-3 row text-center">
+        <article class="bg-transparent text-light firstArticle col-12 col-lg-6 col-md-6">
+          <h1> Charlas informativas </h1>
+          <p> Bienvenidos a Rolling Conf, donde nuestros mentores mas experimentados van a dar su charlas informativas acerca de sus conocimientos y tecnicas en la programacion, Aqui podras ver todo tipo de temas, desde programacion frontend, backend y diseño de videojuegos.</p>
+        </article>
+
+        <article class="bg-transparent secondArticle p-3 col-12 col-lg-6 col-md-6">
+            <div>
+              <img src="" alt="">
+            </div>
+        </article>
+      </div>
+  
+    </section>
+  </main>
+
+  <div class="wave ps-0 pe-0">
+    <img src="img/imgLogos/wave2.png" alt="">
+  </div>
+
+  <h1 class="text-center mb-5"> CHARLAS</h1> 
+  <div class="sectionCards">
+  <section class=" container text-center">
+    <div class="mentorCards row justify-content-center" id="mainCardDiv">
 
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </section>
+</div>
+    
+
+  <footer id="fooTerq">
+
+  </footer>
+  <!-- <div id="app">
+    <button id="btn-user">Ver usuarios</button>
+    <button id="btn-talks">Ver charlas</button>
+  </div> -->
+  <script type="module" src="js/main/main.js"></script>
+  <!-- <script src="js/components/footer.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

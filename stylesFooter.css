@@ -150,10 +150,6 @@ footer a {
   font-size: 18px;
 }
 
-iframe {
-  border-radius: 20px;
-}
-
 @media (max-width: 768px) {
   .footerMobile {
     display: none;
