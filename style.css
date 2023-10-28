@@ -95,3 +95,67 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #D81D26;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons-container, .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  height: 50px;
+  width: 60px;
+  background-image: url(/img/youtube-logo-24.png);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  transition: all 400ms ease;
+}
+
+.social-icon:hover {
+  transform: translate3d(5px, 5px, 5px);
+}
+
+.social-icon:nth-of-type(2) {
+  background-image: url(/img/instagram-alt-logo-24.png);
+}
+
+.social-icon:nth-of-type(3) {
+  background-image: url(/img/facebook-square-logo-24.png);
+}
+
+.social-icon:nth-of-type(4) {
+  background-image: url(/img/twitter-logo-24.png);
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footerMobile {
+    display: none;
+  }
+  
+  .hrMobile {
+    display: none;
+  }
+}
