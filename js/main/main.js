@@ -1,5 +1,6 @@
 
 import { getAllConfs } from "../utils/requestConf.utils.js";
+
 const printCards = async () => {
   console.log('test')
   try {
@@ -24,5 +25,18 @@ const printCards = async () => {
     console.log(error.message)
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('navUl');
+  if (localStorage.getItem("user")) {
+    const profileItem = document.createElement('li');
+    const loginItem = document.getElementById('loginItem');
+    loginItem.classList="d-none"
+    const regItem = document.getElementById('registerItem');
+    regItem.classList="d-none"
+    profileItem.innerHTML = `<a class="nav-link text-light" href="#">Perfil</a>`
+    list.appendChild(profileItem)
+  };
+})
 
 printCards();

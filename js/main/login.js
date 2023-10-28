@@ -9,6 +9,7 @@ const login = async (e) => {
   try {
     const [user] = await getUsersByEmail(data.email);
     if (user) {
+      localStorage.setItem("user", "true")
       location.href('/index.html');
     } else {
       alert('Usuario no registrado');
