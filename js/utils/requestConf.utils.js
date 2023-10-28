@@ -1,10 +1,10 @@
 const URL = "http://localhost:3000"
 
-const getAllConfs = async () => {
+export const getAllConfs = async () => {
   try {
     const firstData = await fetch(`${URL}/charlas`);
     const finalData = await firstData.json();
-    return console.log(finalData);
+    return finalData;
   } catch (error) {
     return console.log(error.message);
   }

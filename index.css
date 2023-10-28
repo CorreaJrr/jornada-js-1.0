@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --gradientBgc: linear-gradient(to bottom, rgb(255, 255, 255),  rgb(26, 5, 5),  rgba(26, 5, 5, 0.214),   rgba(26, 5, 5, 0.18),  100% );
+}
+
+
+nav  {
+    background-color: black;
+
+}
+
+
+main { 
+    background-image: url("/img/imgLogos/como-se-le-dice-a-las-personas-que-dan-charlas.jpg");
+}
+.firstArticle {
+    padding-top: 100px;
+}
+.secondArticle div {
+    padding-top: 1px;
+    width: 80%;
+    height: 80%;
+
+}
+.mentorCards {  
+    margin-top: 2px;
+}
+
+.cardCustom {
+    border-radius: 5px;
+}
+main section article {
+    width: 400px;
+    height: 400px;
+}
+.decoration {
+    background-color: rgb(0, 0, 0);
+    color:darkblue;
+    /* margin-top: 20px; */
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    animation: wave 6s infinite;
+}  
+@keyframes wave {
+    0% {height: 60px;}
+    25%{height: 75px;}
+    50%{height: 70px;}
+    100%{height: 60px;}
+}
+.decoration2 {
+    background-color: rgba(0, 0, 0, 0.68);
+    color:darkblue;
+    /* margin-top: 20px; */
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    animation: waves2 2s infinite alternate ;
+}
+@keyframes waves2 {
+    0% {transform:translateY(5px);}
+    50%{transform:translateY(20px) ;}
+    100%{transform:translateY(15px);}
+}  
+.decoration3 {
+    background-color: rgba(0, 0, 0, 0.298);
+    /* margin-top: 20px; */
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    animation: waves2 3s infinite alternate;
+}
+@keyframes waves2 {
+    0% {transform:translateY(10px);}
+    50%{transform:translateY(15px) ;}
+    100%{transform:translateY(12px);}
+}  
+
+.card {
+    background-color: black;
+    width: 500px;
+    height: 300px;
+    margin: 5px;
+}
+.sectionCards  {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.596) 0%, rgb(255, 255, 255) 73%);
+
+}
+.wave img {
+    background-size: 200%;
+    opacity: 20%;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+  }
+  
+  .wave {
+    position: relative;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    /* min-height: ; */
+    height: 100px;
+    background-image: url("/img/imgLogos/wave2.png");
+    background-size: 100% 100%;
+    animation: wave 40s linear infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position-x: 0;
+    }
+  
+    50% {
+      background-position-x: 1000px;
+    }
+  
+    100% {
+      background-position-x: 0px;
+    }
+  }
+
