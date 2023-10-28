@@ -11,8 +11,8 @@ const printCards = async () => {
       const cardDiv = document.createElement('div');
       cardDiv.classList="mentorCards row justify-content-center";
       cardDiv.innerHTML = `
-      <div class="bg-warning col-12 col-md-10 p-2 cardCustom">
-      <img src="..." class="card-img-top" alt="...">
+      <div class="bg-dark text-white col-12 col-md-10 p-2 cardCustom">
+      <img src="${conf.imagen}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${conf.título}</h5>
         <p class="card-text">${conf.orador}</p>
